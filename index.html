@@ -1,0 +1,281 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEXEL | Pixel Art Game | by MTA Pixel Studio</title>
+  <link rel="icon" href="./assets/images/og.png">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Download VEXEL — a handcrafted pixel-art adventure from MTA Pixel Studio. Official download (100 MB). Secure installer — click to start playing.">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <meta name="author" content="Your Name or Company">
+
+  <!-- Crawling / Indexing -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mta2931.github.io/vexel-website/">
+
+  <!-- Mobile / PWA -->
+  <meta name="theme-color" content="#111827">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="./assets/images/og.png">
+
+  <!-- Windows tile -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png">
+
+  <!-- Referrer policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Security (prefer to set CSP in server headers; meta form below is a minimal example) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
+  <meta http-equiv="Content-Security-Policy"
+  content="
+  default-src 'self';
+  img-src 'self' data: https:;
+  script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src https://fonts.gstatic.com;
+  ">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VEXEL | Pixel Art Game | by MTA Pixel Studio">
+  <meta property="og:description" content="Explore a handcrafted pixel world filled with challenging combat, clever puzzles, hidden secrets, and unforgettable adventures.">
+  <meta property="og:url" content="https://mta2931.github.io/vexel-website/">
+  <meta property="og:site_name" content="VEXEL">
+    <meta property="og:image" content="https://mta2931.github.io/vexel-website/assets/og.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VEXEL | Pixel Art Game | by MTA Pixel Studio">
+  <meta name="twitter:description" content="Explore a handcrafted pixel world filled with challenging combat, clever puzzles, hidden secrets, and unforgettable adventures.">
+  <meta name="twitter:image" content="https://mta2931.github.io/vexel-website/assets/twitter-image-1200x628.jpg">
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://mta2931.github.io/vexel-website/",
+    "name": "VEXEL",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://mta2931.github.io/vexel-website/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+ <body>
+  <div class="site-shell">
+   <div class="noise"></div>
+   <div class="scanlines"></div>
+   <div id="pixel-cursor" aria-hidden="true"></div>
+   <header class="topbar fixed top-0 z-30 w-full">
+    <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4" aria-label="Primary navigation"><a href="#home" class="brand-mark pixel-font text-sm text-white no-underline">VEXEL</a>
+     <div class="desktop-nav flex items-center gap-7"><a class="nav-link" href="#about">ABOUT</a> <a class="nav-link" href="#features">FEATURES</a> <a class="nav-link" href="#gallery">GALLERY</a>
+     </div><button type="button" class="pixel-button !min-h-0 !px-3 !py-2 !text-[.5rem] text-[#a5ff73] bg-[#172346]" data-download-trigger="" aria-label="Prepare download link"> <i data-lucide="download" class="h-3 w-3"></i><span>GET GAME</span> </button>
+    </nav>
+   </header>
+   <main>
+    <section id="home" class="hero">
+     <div class="stars" id="stars" aria-hidden="true"></div>
+     <div class="particles" id="particles" aria-hidden="true"></div>
+     <div class="cloud-layer" aria-hidden="true">
+      <span class="cloud one"></span><span class="cloud two"></span>
+     </div>
+     <div class="mountains" id="hero-scenery" aria-hidden="true">
+      <div class="mountain-back"></div>
+      <div class="mountain-front"></div>
+     </div>
+     <div class="hero-content reveal show">
+      <p class="eyebrow">MTA PIXEL STUDIO</p>
+      <h1 class="vexel-logo mt-6">VEXEL</h1>
+      <h2 class="hero-subtitle">A Modern Pixel Adventure</h2>
+      <p class="hero-copy">Explore a handcrafted pixel world filled with challenging combat, clever puzzles, hidden secrets, and unforgettable adventures.</p>
+      <div class="hero-actions mt-9 flex flex-wrap justify-center gap-4"><button type="button" class="pixel-button pixel-cut bg-[#56e7ff] text-[#071021] shadow-[5px_5px_0_#4930a0,0_0_25px_#56e7ff]" data-download-trigger="">DOWNLOAD NOW</button> <button type="button" class="pixel-button pixel-cut bg-[#191d48] text-[#f5f7ff] shadow-[5px_5px_0_#050616,0_0_22px_#9b6bff]" data-trailer-trigger="">WATCH TRAILER</button>
+      </div>
+     </div>
+    </section>
+    <section id="about" class="section bg-[#0a0d25]">
+     <div class="about-orb"></div>
+     <div class="section-inner about-grid">
+      <div class="reveal left">
+       <p class="section-kicker">01 / THE JOURNEY</p>
+       <h2 class="section-title">Explore the World of VEXEL</h2>
+       <p class="section-copy mt-6">Fight enemies, discover hidden places, collect treasures, and enjoy a handcrafted pixel adventure built for explorers who look beyond the obvious path.</p>
+      </div>
+      <div class="pixel-border pixel-cut bg-[#12183b] p-4 reveal right">
+       <div class="feature-callout">
+        <div class="pixel-icon">
+         <i data-lucide="swords"></i>
+        </div>
+        <div>
+         <h3>Fight with purpose</h3>
+         <p>Quick, expressive encounters reward timing and curiosity.</p>
+        </div>
+       </div>
+       <div class="feature-callout">
+        <div class="pixel-icon !text-[#56e7ff]">
+         <i data-lucide="map"></i>
+        </div>
+        <div>
+         <h3>Find the unseen</h3>
+         <p>Each region hides routes, rooms, and stories worth uncovering.</p>
+        </div>
+       </div>
+       <div class="feature-callout">
+        <div class="pixel-icon !text-[#9b6bff]">
+         <i data-lucide="gem"></i>
+        </div>
+        <div>
+         <h3>Claim rare relics</h3>
+         <p>Gather strange artifacts that reshape the way you travel.</p>
+        </div>
+       </div>
+       <div class="feature-callout border-b-0">
+        <div class="pixel-icon !text-[#ff9ede]">
+         <i data-lucide="sparkles"></i>
+        </div>
+        <div>
+         <h3>Chase the glow</h3>
+         <p>Follow shimmering signals into a living pixel frontier.</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="features" class="section">
+     <div class="section-inner">
+      <div class="reveal">
+       <p class="section-kicker">02 / BUILT FOR ADVENTURE</p>
+       <h2 class="section-title">Every Pixel Has a Purpose</h2>
+       <p class="section-copy mt-5">VEXEL pairs classic arcade clarity with a world that keeps unfolding long after the first spark.</p>
+      </div>
+      <div class="feature-grid">
+       <article class="game-card pixel-cut reveal">
+        <span class="card-number">01</span>
+        <div class="card-art">
+         ⚔
+        </div>
+        <h3>FAST COMBAT</h3>
+        <p>Dash, strike, and outsmart strange creatures.</p>
+       </article>
+       <article class="game-card pixel-cut reveal" style="transition-delay:.08s">
+        <span class="card-number">02</span>
+        <div class="card-art">
+         🧩
+        </div>
+        <h3>HARD PUZZLES</h3>
+        <p>Read the world closely to unlock its hidden logic.</p>
+       </article>
+       <article class="game-card pixel-cut reveal" style="transition-delay:.16s">
+        <span class="card-number">03</span>
+        <div class="card-art">
+         🌍
+        </div>
+        <h3>PIXEL WORLDS</h3>
+        <p>Cross luminous biomes made to be explored.</p>
+       </article>
+       <article class="game-card pixel-cut reveal" style="transition-delay:.24s">
+        <span class="card-number">04</span>
+        <div class="card-art">
+         🎵
+        </div>
+        <h3>RETRO MUSIC</h3>
+        <p>A synth-rich score that moves with every discovery.</p>
+       </article>
+       <article class="game-card pixel-cut reveal" style="transition-delay:.32s">
+        <span class="card-number">05</span>
+        <div class="card-art">
+         💾
+        </div>
+        <h3>SAVE ANYWHERE</h3>
+        <p>Your next discovery is always waiting for you.</p>
+       </article>
+      </div>
+     </div>
+    </section>
+    <section id="gallery" class="section bg-[#0b0f2c]">
+     <div class="section-inner">
+      <div class="reveal">
+       <p class="section-kicker">03 / FIELD RECORDINGS</p>
+       <h2 class="section-title">Enter the VEXEL Archive</h2>
+      </div>
+      <div class="gallery-grid reveal zoom">
+       <figure class="gallery-item pixel-cut m-0">
+        <img loading="lazy" src="./assets/images/1.png" alt="Colorful abstract art with a vibrant blue and pink skyline effect.">
+        <figcaption class="gallery-label">THE BLUE MENU</figcaption>
+       </figure>
+       <figure class="gallery-item pixel-cut m-0">
+        <img loading="lazy" src="./assets/images/2.png" alt="Enchanting scene of mushrooms glowing with fairy lights in a dark forest setting.">
+        <figcaption class="gallery-label">BIG & SMALL MAPS</figcaption>
+       </figure>
+       <figure class="gallery-item pixel-cut m-0">
+        <img loading="lazy" src="./assets/images/poster.png" alt="A dimly lit tunnel in Hinterbrühl, Austria, showcasing an underground cavern.">
+        <figcaption class="gallery-label">THE UNDERSIDE</figcaption>
+       </figure>
+       <figure class="gallery-item pixel-cut m-0">
+        <img loading="lazy" src="./assets/images/3.png" alt="Close-up of a colorful vintage arcade machine with glowing joysticks and buttons in a dimly lit game room.">
+        <figcaption class="gallery-label">PIXEL PEAKS</figcaption>
+       </figure>
+      </div>
+     </div>
+    </section>
+    <section id="download" class="section download-zone">
+     <div class="section-inner download-content reveal zoom">
+      <p class="section-kicker">READY PLAYER ONE</p>
+      <h2 class="section-title">Download VEXEL</h2>
+      <p class="section-copy mx-auto mt-5">The signal is clear. Begin your adventure and step into a world made one luminous pixel at a time.</p><button type="button" class="download-button pixel-button pixel-cut mt-9 bg-[#a5ff73] text-[#071021]" data-download-trigger="">DOWNLOAD FOR WINDOWS</button>
+     </div>
+    </section>
+   </main>
+   <footer class="bg-[#050615]">
+    <div class="pixel-divider"></div>
+    <div class="mx-auto flex w-full max-w-6xl flex-col gap-5 px-5 py-10 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+     <div>
+      <p class="m-0 text-sm text-[#c8ccef]">© 2026 MTA Company</p>
+      <p class="mt-2 text-xs tracking-[.18em] text-[#56e7ff]">MTA PIXEL STUDIO</p>
+     </div>
+    </div>
+   </footer>
+   <div id="trailer-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="trailer-modal-title" aria-hidden="true">
+    <div class="trailer-panel pixel-cut">
+     <div class="flex items-center justify-between border-b border-[#5265b6] px-5 py-4">
+      <h2 id="trailer-modal-title" class="pixel-font text-[.7rem] leading-6">VEXEL // TRAILER SIGNAL</h2><button type="button" class="border border-[#56e7ff] bg-[#11183a] px-3 py-2 text-xs text-[#56e7ff]" data-trailer-close="">CLOSE</button>
+     </div>
+     <div class="trailer-screen p-8 text-center">
+      <div>
+       <div class="play-orb pixel-cut mx-auto">
+        <i data-lucide="play" class="h-9 w-9"></i>
+       </div>
+       <p class="pixel-font mt-7 text-xs leading-7 text-[#a5ff73]">TRAILER TRANSMISSION READY</p>
+       <p class="mx-auto mt-4 max-w-md text-sm text-[#cbd1f8]">Connect your official VEXEL trailer URL to this cinematic panel when the reveal is ready.</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="download-toast" class="toast pixel-border pixel-cut bg-[#11183a] p-4" role="status" aria-live="polite">
+    <p class="pixel-font m-0 text-[.6rem] leading-6 text-[#a5ff73]">DOWNLOAD LINK READY</p>
+    <p class="mb-0 mt-2 text-sm text-[#dce1ff]">This button is ready to connect to the official VEXEL game download URL.</p>
+   </div>
+  </div>
+  <script src="./js/main.js"></script>
+ 
+</body></html>
+

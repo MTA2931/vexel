@@ -1,0 +1,299 @@
+
+
+/* =========================================================
+   VEXEL Responsive
+   Mobile First
+   ========================================================= */
+
+/* ---------- Ultra Small Phones ---------- */
+/* 320px - 359px */
+@media (max-width:359px){
+
+    .hero{
+        padding:6rem 1rem 4rem;
+        min-height:100vh;
+    }
+
+    .vexel-logo{
+        font-size:2.3rem;
+    }
+
+    .hero-subtitle{
+        font-size:.9rem;
+    }
+
+    .hero-copy{
+        font-size:.85rem;
+    }
+
+    .hero-actions{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .pixel-button{
+        width:100%;
+    }
+
+    .section{
+        padding:4rem 1rem;
+    }
+
+    .about-grid,
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-auto-rows:180px;
+    }
+
+    .gallery-item{
+        grid-column:auto !important;
+        grid-row:auto !important;
+    }
+
+    .desktop-nav{
+        display:none;
+    }
+
+}
+
+
+/* ---------- Phones ---------- */
+/* 360 - 479 */
+
+@media (min-width:360px) and (max-width:479px){
+
+    .desktop-nav{
+        display:none;
+    }
+
+    .hero{
+        padding:6rem 1rem 4rem;
+    }
+
+    .hero-actions{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .pixel-button{
+        width:100%;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        grid-auto-rows:220px;
+    }
+
+    .gallery-item{
+        grid-column:auto !important;
+        grid-row:auto !important;
+    }
+
+}
+
+
+/* ---------- Large Phones ---------- */
+/* 480 - 767 */
+
+@media (min-width:480px) and (max-width:767px){
+
+    .desktop-nav{
+        display:none;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+    }
+
+    .pixel-button{
+        width:100%;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:200px;
+    }
+
+    .gallery-item{
+        grid-column:auto !important;
+        grid-row:auto !important;
+    }
+
+}
+
+
+/* ---------- Tablets ---------- */
+/* 768 - 991 */
+
+@media (min-width:768px) and (max-width:991px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .game-card:last-child{
+        grid-column:span 2;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-item{
+        grid-column:auto !important;
+        grid-row:auto !important;
+    }
+
+}
+
+
+/* ---------- Landscape Tablets ---------- */
+/* 992 - 1199 */
+
+@media (min-width:992px) and (max-width:1199px){
+
+    .section-inner{
+        width:95%;
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+
+/* ---------- Laptop ---------- */
+/* 1200 - 1439 */
+
+@media (min-width:1200px){
+
+    .section-inner{
+        width:min(100%,1120px);
+    }
+
+}
+
+
+/* ---------- Full HD ---------- */
+/* 1440 - 1919 */
+
+@media (min-width:1440px){
+
+    html{
+        font-size:17px;
+    }
+
+    .section-inner{
+        max-width:1300px;
+    }
+
+    .hero{
+        min-height:100vh;
+    }
+
+}
+
+
+/* ---------- 2K ---------- */
+
+@media (min-width:1920px){
+
+    html{
+        font-size:18px;
+    }
+
+    .section-inner{
+        max-width:1500px;
+    }
+
+    .vexel-logo{
+        font-size:9rem;
+    }
+
+}
+
+
+/* ---------- 4K ---------- */
+
+@media (min-width:2560px){
+
+    html{
+        font-size:20px;
+    }
+
+    .section-inner{
+        max-width:1800px;
+    }
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .vexel-logo{
+        font-size:11rem;
+    }
+
+}
+
+
+/* ---------- Cursor ---------- */
+
+@media (max-width:991px){
+
+    #pixel-cursor{
+        display:none;
+    }
+
+    body,
+    a,
+    button{
+        cursor:auto;
+    }
+
+}
+
+
+/* ---------- Landscape Phones ---------- */
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .hero{
+        min-height:auto;
+        padding:6rem 2rem;
+    }
+
+}
+
